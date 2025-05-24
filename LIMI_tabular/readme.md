@@ -3,9 +3,17 @@ The scripts are stored in the folder **expsh**.
 
 Getting Started as follows:
 
-1. `pip install _requirements.txt`
+1. Create and activate a Python 3.7 virtual environment (e.g., using `conda` or `pyenv` with `virtualenv`).
+2. Install dependencies:
+   `pip install -r requirements.txt`
 
-    make sure `copulas==0.7.0`, `ctgan==0.5.1`, `rdt==0.6.3`
+   **Important Notes on Dependencies:**
+    *   **PyTorch (torch, torchvision, torchaudio):** The `requirements.txt` file lists the specific versions used. However, due to the need for CUDA-specific (or CPU-only) builds, these are commented out. You will need to install them manually *after* the command above, using a command appropriate for your system. For example, for CUDA 10.1:
+        `pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/cu101/torch_stable.html`
+        Refer to the comments in `requirements.txt` and the official PyTorch website for the correct command for your setup.
+    *   **Tempeh:** The `requirements.txt` file attempts to install `tempeh` directly from GitHub. If this fails, you may need to install it manually using:
+        `pip install git+https://github.com/microsoft/tempeh.git@v0.1.12#egg=tempeh`
+    *   For a detailed explanation of changes made to the original requirements, please see `requirements_changes.md`.
 
 2. train the tested models (the models are stored in `./exp/train_dnn/train/`)
 

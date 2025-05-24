@@ -15,6 +15,3 @@ CUDA_VISIBLE_DEVICES=$cuda_id python train_dnn.py --exp_name='bank_base' \
 CUDA_VISIBLE_DEVICES=$cuda_id python train_dnn.py --exp_name='meps_base' \
     --dataset='meps' \
     --exp_flag='train'
-
-
-

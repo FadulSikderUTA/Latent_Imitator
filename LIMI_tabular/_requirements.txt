@@ -17,11 +17,11 @@ iniconfig==1.1.1
 joblib==1.1.0
 kiwisolver==1.3.1
 llvmlite==0.36.0
-matplotlib==3.3.4
+matplotlib==3.4.0
 memory-profiler==0.60.0
-mkl-fft==1.3.0
-mkl-random==1.1.1
-mkl-service==2.3.0
+mkl-fft
+mkl-random
+mkl-service
 numba==0.53.1
 packaging==21.3
 pandas==1.1.5
@@ -43,7 +43,7 @@ scipy==1.5.4
 sdmetrics==0.7.0
 shap==0.41.0
 slicer==0.0.7
-tempeh==0.1.12
+#tempeh==0.1.12
 tenacity==8.1.0
 tensorboard==1.14.0
 tensorflow==1.14.0
@@ -51,9 +51,9 @@ tensorflow-estimator==1.14.0
 termcolor==1.1.0
 threadpoolctl==3.1.0
 tomli==1.2.3
-torch==1.8.1+cu101
-torchaudio==0.8.1
-torchvision==0.9.1+cu101
+#torch==1.8.1+cu101
+#torchaudio==0.8.1
+#torchvision==0.9.1+cu101
 tqdm==4.64.0
 urllib3==1.26.12
 wrapt==1.12.1

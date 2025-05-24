@@ -1,0 +1,106 @@
+absl-py==2.1.0
+aif360==0.4.0
+astor==0.8.1
+attrs==22.1.0
+certifi==2021.5.30
+charset-normalizer==2.0.12
+cloudpickle==2.2.0
+copulas==0.7.0
+ctgan==0.5.1
+cycler==0.11.0
+deepecho==0.3.0.post1
+eagerpy==0.30.0
+exceptiongroup==1.3.0
+Faker==14.2.1
+gast==0.6.0
+google-pasta==0.2.0
+graphviz==0.19.1
+grpcio==1.62.3
+h5py==3.8.0
+idna==3.4
+importlib-metadata==6.7.0
+importlib-resources==5.4.0
+iniconfig==1.1.1
+joblib==1.1.0
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver==1.3.1
+llvmlite==0.36.0
+Markdown==3.4.4
+MarkupSafe==2.1.5
+matplotlib==3.4.0
+memory-profiler==0.60.0
+mkl==2025.1.0 # Intel Math Kernel Library, includes mkl-fft, mkl-random, mkl-service
+numba==0.53.1
+numpy==1.21.6
+packaging==21.3
+pandas==1.1.5
+Pillow==8.4.0
+plotly==5.10.0
+pluggy==1.0.0
+protobuf==3.17.2
+psutil==5.9.1
+py==1.11.0
+pyparsing==3.0.9
+pytest==7.0.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==5.4.1
+rdt==0.6.3
+requests==2.27.1
+scikit-learn==0.24.2
+scipy==1.5.4
+sdmetrics==0.7.0
+seaborn==0.12.2
+shap==0.41.0
+six==1.17.0
+slicer==0.0.7
+# For tempeh, the version 0.1.12 specified in the original requirements.txt
+# was not found on PyPI for Python 3.7.
+# Install from GitHub using the v0.1.12 tag (which installs as version 0.1.11):
+git+https://github.com/microsoft/tempeh.git@v0.1.12#egg=tempeh
+tenacity==8.1.0
+tensorboard==1.14.0
+tensorflow==1.14.0
+tensorflow-estimator==1.14.0
+termcolor==1.1.0
+threadpoolctl==3.1.0
+tomli==1.2.3
+# For PyTorch, specific CUDA/CPU versions need to be installed manually.
+# The following versions were confirmed to work in the 'limi_tabular_py37' environment
+# and were present in the pip freeze output:
+# torch==1.8.1+cu101
+# torchaudio==0.8.1
+# torchvision==0.9.1+cu101
+# To install these specific versions for CUDA 10.1, for example, use:
+# pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/cu101/torch_stable.html
+# Ensure you adapt the command for your specific CUDA version or if using CPU-only.
+# If these lines are uncommented, pip install -r requirements.txt might fail or install CPU versions.
+tqdm==4.64.0
+typing_extensions==4.7.1
+urllib3==1.26.12
+Werkzeug==2.2.3
+wrapt==1.12.1
+zipp==3.15.0
+
+# The following packages were present in `pip freeze` but are likely dependencies
+# of mkl (Intel libraries) or PyTorch (NVIDIA libraries) and are generally
+# managed by the installation of those primary packages. Explicitly listing them
+# might be redundant or lead to conflicts if versions are too specific.
+# dpcpp-cpp-rt==2025.1.1
+# intel-cmplr-lib-rt==2025.1.1
+# intel-cmplr-lib-ur==2025.1.1
+# intel-cmplr-lic-rt==2025.1.1
+# intel-opencl-rt==2025.1.1
+# intel-openmp==2025.1.1
+# intel-sycl-rt==2025.1.1
+# mkl-fft==1.3.1 # Covered by mkl package
+# mkl-random==1.2.2 # Covered by mkl package
+# mkl-service==2.4.0 # Covered by mkl package
+# nvidia-cublas-cu11==11.10.3.66
+# nvidia-cuda-nvrtc-cu11==11.7.99
+# nvidia-cuda-runtime-cu11==11.7.99
+# nvidia-cudnn-cu11==8.5.0.96
+# tbb==2022.1.0
+# tcmlib==1.3.0
+# umf==0.10.0

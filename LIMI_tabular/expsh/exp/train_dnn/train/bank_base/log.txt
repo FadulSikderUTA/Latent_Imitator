@@ -1,0 +1,5 @@
+[2025-05-12 12:14:02,968][INFO] the random_seed is set as 1234
+
+[2025-05-12 12:14:02,968][INFO] setting {'experiment': 'train_dnn', 'exp_name': 'bank_base', 'dataset': 'bank', 'nb_epochs': 1000, 'batch_size': 128, 'learning_rate': 0.001, 'sample_add_rate': 0.3, 'datapath': 'census_aug.txt', 'random_seed': 1234, 'protected_index': 8, 'method_type': 'adf', 'evaluate_path': './exp/train_dnn/retrain/cencus_gender_5_ours', 'exp_flag': 'train', 'des': 'description', 'evaluate_log': 'evaluate_train', 'expdir': './exp/train_dnn/train/bank_base', 'model_path': './exp/train_dnn/train/bank_base', 'aug_store_path': './exp/train_dnn/train/bank_base/aug.txt', 'predict_path': './exp/train_dnn/train/bank_base/predict_label.txt'}
+
+[2025-05-12 12:34:27,155][INFO] Test accuracy on legitimate test examples: 0.9416071310079406
